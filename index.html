@@ -1,0 +1,333 @@
+<!doctype html>
+<head><meta charset="utf-8">
+<title>Iterator Helpers</title><script type="application/json" id="menu-search-biblio">[{"type":"op","aoid":"GetIteratorDirect","refId":"sec-getiteratordirect","location":"","referencingIds":[],"key":"GetIteratorDirect"},{"type":"clause","id":"sec-getiteratordirect","aoid":"GetIteratorDirect","title":"GetIteratorDirect ( obj )","titleHTML":"GetIteratorDirect ( <var>obj</var> )","number":"1.1.1","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":["_ref_2","_ref_19","_ref_37","_ref_50","_ref_56"],"key":"GetIteratorDirect ( obj )"},{"type":"clause","id":"sec-operations-on-iterator-objects","aoid":null,"title":"Operations on Iterator Objects","titleHTML":"Operations on Iterator Objects","number":"1.1","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":[],"key":"Operations on Iterator Objects"},{"type":"clause","id":"sec-abstract-operations","aoid":null,"title":"Abstract Operations","titleHTML":"Abstract Operations","number":"1","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":[],"key":"Abstract Operations"},{"type":"term","term":"%IteratorPrototypeMapIteratorPrototype%","refId":"sec-iteratorprototypemapiteratorprototype","referencingIds":[],"namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","key":"%IteratorPrototypeMapIteratorPrototype%"},{"type":"clause","id":"sec-iteratorprototypemapiteratorprototype-next","aoid":null,"title":"%IteratorPrototypeMapIteratorPrototype%.next( v )","titleHTML":"%IteratorPrototypeMapIteratorPrototype%.next( <var>v</var> )","number":"2.1.1.1.1.1","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":[],"key":"%IteratorPrototypeMapIteratorPrototype%.next( v )"},{"type":"clause","id":"sec-iteratorprototypemapiteratorprototype-return","aoid":null,"title":"%IteratorPrototypeMapIteratorPrototype%.return","titleHTML":"%IteratorPrototypeMapIteratorPrototype%.return","number":"2.1.1.1.1.2","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":[],"key":"%IteratorPrototypeMapIteratorPrototype%.return"},{"type":"clause","id":"sec-iteratorprototypemapiteratorprototype-throw","aoid":null,"title":"%IteratorPrototypeMapIteratorPrototype%.throw","titleHTML":"%IteratorPrototypeMapIteratorPrototype%.throw","number":"2.1.1.1.1.3","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":[],"key":"%IteratorPrototypeMapIteratorPrototype%.throw"},{"type":"table","id":"table-1","number":1,"caption":"Table 1: Internal Slots of %IteratorPrototypeMapIteratorPrototype Instances","referencingIds":[],"namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","key":"Table 1: Internal Slots of %IteratorPrototypeMapIteratorPrototype Instances"},{"type":"clause","id":"sec-properties-of-iteratorprototypemapiteratorprototype-instances","aoid":null,"title":"Properties of %IteratorPrototypeMapIteratorPrototype% Instances","titleHTML":"Properties of %IteratorPrototypeMapIteratorPrototype% Instances","number":"2.1.1.1.1.4","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":[],"key":"Properties of %IteratorPrototypeMapIteratorPrototype% Instances"},{"type":"clause","id":"sec-iteratorprototypemapiteratorprototype","aoid":null,"title":"%IteratorPrototypeMapIteratorPrototype%","titleHTML":"%IteratorPrototypeMapIteratorPrototype%","number":"2.1.1.1.1","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":["_ref_5","_ref_8","_ref_15","_ref_17"],"key":"%IteratorPrototypeMapIteratorPrototype%"},{"type":"clause","id":"sec-iteratorprototype-map","aoid":null,"title":"%IteratorPrototype%.map ( mapper )","titleHTML":"%IteratorPrototype%.map ( <var>mapper</var> )","number":"2.1.1.1","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":[],"key":"%IteratorPrototype%.map ( mapper )"},{"type":"term","term":"%IteratorPrototypeFilterIteratorPrototype%","refId":"sec-iteratorprototypefilteriteratorprototype","referencingIds":[],"namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","key":"%IteratorPrototypeFilterIteratorPrototype%"},{"type":"clause","id":"sec-iteratorprototypefilteriteratorprototype-next","aoid":null,"title":"%IteratorPrototypeFilterIteratorPrototype%.next( v )","titleHTML":"%IteratorPrototypeFilterIteratorPrototype%.next( <var>v</var> )","number":"2.1.1.2.1.1","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":[],"key":"%IteratorPrototypeFilterIteratorPrototype%.next( v )"},{"type":"clause","id":"sec-iteratorprototypefilteriteratorprototype-return","aoid":null,"title":"%IteratorPrototypeFilterIteratorPrototype%.return","titleHTML":"%IteratorPrototypeFilterIteratorPrototype%.return","number":"2.1.1.2.1.2","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":[],"key":"%IteratorPrototypeFilterIteratorPrototype%.return"},{"type":"clause","id":"sec-iteratorprototypefilteriteratorprototype-throw","aoid":null,"title":"%IteratorPrototypeFilterIteratorPrototype%.throw","titleHTML":"%IteratorPrototypeFilterIteratorPrototype%.throw","number":"2.1.1.2.1.3","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":[],"key":"%IteratorPrototypeFilterIteratorPrototype%.throw"},{"type":"table","id":"table-2","number":2,"caption":"Table 2: Internal Slots of %IteratorPrototypeFilterIteratorPrototype Instances","referencingIds":[],"namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","key":"Table 2: Internal Slots of %IteratorPrototypeFilterIteratorPrototype Instances"},{"type":"clause","id":"sec-properties-of-iteratorprototypefilteriteratorprototype-instances","aoid":null,"title":"Properties of %IteratorPrototypeFilterIteratorPrototype% Instances","titleHTML":"Properties of %IteratorPrototypeFilterIteratorPrototype% Instances","number":"2.1.1.2.1.4","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":[],"key":"Properties of %IteratorPrototypeFilterIteratorPrototype% Instances"},{"type":"clause","id":"sec-iteratorprototypefilteriteratorprototype","aoid":null,"title":"%IteratorPrototypeFilterIteratorPrototype%","titleHTML":"%IteratorPrototypeFilterIteratorPrototype%","number":"2.1.1.2.1","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":["_ref_22","_ref_25","_ref_33","_ref_35"],"key":"%IteratorPrototypeFilterIteratorPrototype%"},{"type":"clause","id":"sec-iteratorprototype-filter","aoid":null,"title":"%IteratorPrototype%.filter ( filterer )","titleHTML":"%IteratorPrototype%.filter ( <var>filterer</var> )","number":"2.1.1.2","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":[],"key":"%IteratorPrototype%.filter ( filterer )"},{"type":"term","term":"%IteratorPrototypeTakeIteratorPrototype%","refId":"sec-iteratorprototypetakeiteratorprototype","referencingIds":[],"namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","key":"%IteratorPrototypeTakeIteratorPrototype%"},{"type":"clause","id":"sec-iteratorprototypetakeiteratorprototype-next","aoid":null,"title":"%IteratorPrototypeTakeIteratorPrototype%.next( v )","titleHTML":"%IteratorPrototypeTakeIteratorPrototype%.next( <var>v</var> )","number":"2.1.1.3.1.1","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":[],"key":"%IteratorPrototypeTakeIteratorPrototype%.next( v )"},{"type":"clause","id":"sec-iteratorprototypetakeiteratorprototype-return","aoid":null,"title":"%IteratorPrototypeTakeIteratorPrototype%.return","titleHTML":"%IteratorPrototypeTakeIteratorPrototype%.return","number":"2.1.1.3.1.2","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":[],"key":"%IteratorPrototypeTakeIteratorPrototype%.return"},{"type":"clause","id":"sec-iteratorprototypetakeiteratorprototype-throw","aoid":null,"title":"%IteratorPrototypeTakeIteratorPrototype%.throw","titleHTML":"%IteratorPrototypeTakeIteratorPrototype%.throw","number":"2.1.1.3.1.3","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":[],"key":"%IteratorPrototypeTakeIteratorPrototype%.throw"},{"type":"table","id":"table-3","number":3,"caption":"Table 3: Internal Slots of %IteratorPrototypeTakeIteratorPrototype Instances","referencingIds":[],"namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","key":"Table 3: Internal Slots of %IteratorPrototypeTakeIteratorPrototype Instances"},{"type":"clause","id":"sec-properties-of-iteratorprototypetakeiteratorprototype-instances","aoid":null,"title":"Properties of %IteratorPrototypeTakeIteratorPrototype% Instances","titleHTML":"Properties of %IteratorPrototypeTakeIteratorPrototype% Instances","number":"2.1.1.3.1.4","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":[],"key":"Properties of %IteratorPrototypeTakeIteratorPrototype% Instances"},{"type":"clause","id":"sec-iteratorprototypetakeiteratorprototype","aoid":null,"title":"%IteratorPrototypeTakeIteratorPrototype%","titleHTML":"%IteratorPrototypeTakeIteratorPrototype%","number":"2.1.1.3.1","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":["_ref_40","_ref_43","_ref_46","_ref_48"],"key":"%IteratorPrototypeTakeIteratorPrototype%"},{"type":"clause","id":"sec-iteratorprototype-take","aoid":null,"title":"%IteratorPrototype%.take ( limit )","titleHTML":"%IteratorPrototype%.take ( <var>limit</var> )","number":"2.1.1.3","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":[],"key":"%IteratorPrototype%.take ( limit )"},{"type":"clause","id":"sec-iteratorprototype-reduce","aoid":null,"title":"%IteratorPrototype%.reduce ( reducer, initialValue )","titleHTML":"%IteratorPrototype%.reduce ( <var>reducer</var>, <var>initialValue</var> )","number":"2.1.1.4","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":[],"key":"%IteratorPrototype%.reduce ( reducer, initialValue )"},{"type":"clause","id":"sec-iteratorprototype-collect","aoid":null,"title":"%IteratorPrototype%.collect ( )","titleHTML":"%IteratorPrototype%.collect ( )","number":"2.1.1.5","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":[],"key":"%IteratorPrototype%.collect ( )"},{"type":"clause","id":"sec-%iteratorprototype%-object","aoid":null,"title":"The %IteratorPrototype% Object","titleHTML":"The %IteratorPrototype% Object","number":"2.1.1","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":["_ref_6","_ref_23","_ref_41"],"key":"The %IteratorPrototype% Object"},{"type":"clause","id":"sec-asynciteratorprototype","aoid":null,"title":"The %AsyncIteratorPrototype% Object","titleHTML":"The %AsyncIteratorPrototype% Object","number":"2.1.2","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":[],"key":"The %AsyncIteratorPrototype% Object"},{"type":"term","term":"%IteratorPrototypeReturnPass%","refId":"sec-iteratorprototypereturnpass","referencingIds":[],"namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","key":"%IteratorPrototypeReturnPass%"},{"type":"clause","id":"sec-iteratorprototypereturnpass","aoid":null,"title":"%IteratorPrototypeReturnPass% ( value )","titleHTML":"%IteratorPrototypeReturnPass% ( <var>value</var> )","number":"2.1.3","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":["_ref_16","_ref_34","_ref_47"],"key":"%IteratorPrototypeReturnPass% ( value )"},{"type":"term","term":"%IteratorPrototypeThrowPass%","refId":"sec-iteratorprototypethrowpass","referencingIds":[],"namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","key":"%IteratorPrototypeThrowPass%"},{"type":"clause","id":"sec-iteratorprototypethrowpass","aoid":null,"title":"%IteratorPrototypeThrowPass% ( value )","titleHTML":"%IteratorPrototypeThrowPass% ( <var>value</var> )","number":"2.1.4","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":["_ref_18","_ref_36","_ref_49"],"key":"%IteratorPrototypeThrowPass% ( value )"},{"type":"clause","id":"sec-iteration","aoid":null,"title":"Iteration","titleHTML":"Iteration","number":"2.1","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":[],"key":"Iteration"},{"type":"clause","id":"sec-control-abstraction-objects","aoid":null,"title":"Control Abstraction Objects","titleHTML":"Control Abstraction Objects","number":"2","namespace":"https://tc39.github.io/proposal-iterator-helpers","location":"","referencingIds":[],"key":"Control Abstraction Objects"}]</script></head><body><div id="menu-toggle">☰</div><div id="menu-spacer"></div><div id="menu"><div id="menu-search"><input type="text" id="menu-search-box" placeholder="Search..."><div id="menu-search-results" class="inactive"></div></div><div id="menu-pins"><div class="menu-pane-header">Pins</div><ul id="menu-pins-list"></ul></div><div class="menu-pane-header">Table of Contents</div><div id="menu-toc"><ol class="toc"><li><span class="item-toggle">◢</span><a href="#sec-abstract-operations" title="Abstract Operations"><span class="secnum">1</span> Abstract Operations</a><ol class="toc"><li><span class="item-toggle">◢</span><a href="#sec-operations-on-iterator-objects" title="Operations on Iterator Objects"><span class="secnum">1.1</span> Operations on Iterator Objects</a><ol class="toc"><li><span class="item-toggle-none"></span><a href="#sec-getiteratordirect" title="GetIteratorDirect ( obj )"><span class="secnum">1.1.1</span> GetIteratorDirect ( <var>obj</var> )</a></li></ol></li></ol></li><li><span class="item-toggle">◢</span><a href="#sec-control-abstraction-objects" title="Control Abstraction Objects"><span class="secnum">2</span> Control Abstraction Objects</a><ol class="toc"><li><span class="item-toggle">◢</span><a href="#sec-iteration" title="Iteration"><span class="secnum">2.1</span> Iteration</a><ol class="toc"><li><span class="item-toggle">◢</span><a href="#sec-%iteratorprototype%-object" title="The %IteratorPrototype% Object"><span class="secnum">2.1.1</span> The %IteratorPrototype% Object</a><ol class="toc"><li><span class="item-toggle">◢</span><a href="#sec-iteratorprototype-map" title="%IteratorPrototype%.map ( mapper )"><span class="secnum">2.1.1.1</span> %IteratorPrototype%.map ( <var>mapper</var> )</a><ol class="toc"><li><span class="item-toggle">◢</span><a href="#sec-iteratorprototypemapiteratorprototype" title="%IteratorPrototypeMapIteratorPrototype%"><span class="secnum">2.1.1.1.1</span> %IteratorPrototypeMapIteratorPrototype%</a><ol class="toc"><li><span class="item-toggle-none"></span><a href="#sec-iteratorprototypemapiteratorprototype-next" title="%IteratorPrototypeMapIteratorPrototype%.next( v )"><span class="secnum">2.1.1.1.1.1</span> %IteratorPrototypeMapIteratorPrototype%.next( <var>v</var> )</a></li><li><span class="item-toggle-none"></span><a href="#sec-iteratorprototypemapiteratorprototype-return" title="%IteratorPrototypeMapIteratorPrototype%.return"><span class="secnum">2.1.1.1.1.2</span> %IteratorPrototypeMapIteratorPrototype%.return</a></li><li><span class="item-toggle-none"></span><a href="#sec-iteratorprototypemapiteratorprototype-throw" title="%IteratorPrototypeMapIteratorPrototype%.throw"><span class="secnum">2.1.1.1.1.3</span> %IteratorPrototypeMapIteratorPrototype%.throw</a></li><li><span class="item-toggle-none"></span><a href="#sec-properties-of-iteratorprototypemapiteratorprototype-instances" title="Properties of %IteratorPrototypeMapIteratorPrototype% Instances"><span class="secnum">2.1.1.1.1.4</span> Properties of %IteratorPrototypeMapIteratorPrototype% Instances</a></li></ol></li></ol></li><li><span class="item-toggle">◢</span><a href="#sec-iteratorprototype-filter" title="%IteratorPrototype%.filter ( filterer )"><span class="secnum">2.1.1.2</span> %IteratorPrototype%.filter ( <var>filterer</var> )</a><ol class="toc"><li><span class="item-toggle">◢</span><a href="#sec-iteratorprototypefilteriteratorprototype" title="%IteratorPrototypeFilterIteratorPrototype%"><span class="secnum">2.1.1.2.1</span> %IteratorPrototypeFilterIteratorPrototype%</a><ol class="toc"><li><span class="item-toggle-none"></span><a href="#sec-iteratorprototypefilteriteratorprototype-next" title="%IteratorPrototypeFilterIteratorPrototype%.next( v )"><span class="secnum">2.1.1.2.1.1</span> %IteratorPrototypeFilterIteratorPrototype%.next( <var>v</var> )</a></li><li><span class="item-toggle-none"></span><a href="#sec-iteratorprototypefilteriteratorprototype-return" title="%IteratorPrototypeFilterIteratorPrototype%.return"><span class="secnum">2.1.1.2.1.2</span> %IteratorPrototypeFilterIteratorPrototype%.return</a></li><li><span class="item-toggle-none"></span><a href="#sec-iteratorprototypefilteriteratorprototype-throw" title="%IteratorPrototypeFilterIteratorPrototype%.throw"><span class="secnum">2.1.1.2.1.3</span> %IteratorPrototypeFilterIteratorPrototype%.throw</a></li><li><span class="item-toggle-none"></span><a href="#sec-properties-of-iteratorprototypefilteriteratorprototype-instances" title="Properties of %IteratorPrototypeFilterIteratorPrototype% Instances"><span class="secnum">2.1.1.2.1.4</span> Properties of %IteratorPrototypeFilterIteratorPrototype% Instances</a></li></ol></li></ol></li><li><span class="item-toggle">◢</span><a href="#sec-iteratorprototype-take" title="%IteratorPrototype%.take ( limit )"><span class="secnum">2.1.1.3</span> %IteratorPrototype%.take ( <var>limit</var> )</a><ol class="toc"><li><span class="item-toggle">◢</span><a href="#sec-iteratorprototypetakeiteratorprototype" title="%IteratorPrototypeTakeIteratorPrototype%"><span class="secnum">2.1.1.3.1</span> %IteratorPrototypeTakeIteratorPrototype%</a><ol class="toc"><li><span class="item-toggle-none"></span><a href="#sec-iteratorprototypetakeiteratorprototype-next" title="%IteratorPrototypeTakeIteratorPrototype%.next( v )"><span class="secnum">2.1.1.3.1.1</span> %IteratorPrototypeTakeIteratorPrototype%.next( <var>v</var> )</a></li><li><span class="item-toggle-none"></span><a href="#sec-iteratorprototypetakeiteratorprototype-return" title="%IteratorPrototypeTakeIteratorPrototype%.return"><span class="secnum">2.1.1.3.1.2</span> %IteratorPrototypeTakeIteratorPrototype%.return</a></li><li><span class="item-toggle-none"></span><a href="#sec-iteratorprototypetakeiteratorprototype-throw" title="%IteratorPrototypeTakeIteratorPrototype%.throw"><span class="secnum">2.1.1.3.1.3</span> %IteratorPrototypeTakeIteratorPrototype%.throw</a></li><li><span class="item-toggle-none"></span><a href="#sec-properties-of-iteratorprototypetakeiteratorprototype-instances" title="Properties of %IteratorPrototypeTakeIteratorPrototype% Instances"><span class="secnum">2.1.1.3.1.4</span> Properties of %IteratorPrototypeTakeIteratorPrototype% Instances</a></li></ol></li></ol></li><li><span class="item-toggle-none"></span><a href="#sec-iteratorprototype-reduce" title="%IteratorPrototype%.reduce ( reducer, initialValue )"><span class="secnum">2.1.1.4</span> %IteratorPrototype%.reduce ( <var>reducer</var>, <var>initialValue</var> )</a></li><li><span class="item-toggle-none"></span><a href="#sec-iteratorprototype-collect" title="%IteratorPrototype%.collect ( )"><span class="secnum">2.1.1.5</span> %IteratorPrototype%.collect ( )</a></li></ol></li><li><span class="item-toggle-none"></span><a href="#sec-asynciteratorprototype" title="The %AsyncIteratorPrototype% Object"><span class="secnum">2.1.2</span> The %AsyncIteratorPrototype% Object</a></li><li><span class="item-toggle-none"></span><a href="#sec-iteratorprototypereturnpass" title="%IteratorPrototypeReturnPass% ( value )"><span class="secnum">2.1.3</span> %IteratorPrototypeReturnPass% ( <var>value</var> )</a></li><li><span class="item-toggle-none"></span><a href="#sec-iteratorprototypethrowpass" title="%IteratorPrototypeThrowPass% ( value )"><span class="secnum">2.1.4</span> %IteratorPrototypeThrowPass% ( <var>value</var> )</a></li></ol></li></ol></li></ol></div></div><div id="spec-container"><h1 class="version first">Stage 1 Draft / February 16, 2019</h1><h1 class="title">Iterator Helpers</h1>
+<script src="ecmarkup.js" defer=""></script>
+<link rel="stylesheet" href="ecmarkup.css">
+<style>
+  ins.block {
+    font-weight: bold;
+    font-style: italic;
+  }
+  hr {
+    height: 0.25em;
+    background: #ccc;
+    border: 0;
+    margin: 2em 0;
+  }
+  .unicode-property-table {
+    table-layout: fixed;
+    width: 100%;
+    font-size: 80%;
+  }
+  .unicode-property-table ul {
+    padding-left: 0;
+    list-style: none;
+  }
+  #metadata-block {
+    margin: 4em 0;
+    padding: 10px;
+    border: 1px solid #ee8421;
+  }
+  #metadata-block h1 {
+    font-size: 1.5em;
+    margin-top: 0;
+  }
+  #metadata-block > ul {
+    list-style-type: none;
+    margin: 0; padding: 0;
+  }
+
+</style>
+
+<div id="metadata-block">
+  <h1>Contributing to this Proposal</h1>
+  <p>This proposal is developed on GitHub with the help of the ECMAScript community. There are a number of ways to contribute to the development of this specification:</p>
+  <ul>
+    <li>GitHub Repository:  <a href="https://github.com/tc39/proposal-iterator-helpers">https://github.com/tc39/proposal-iterator-helpers</a></li>
+    <li>Issues:  <a href="https://github.com/tc39/proposal-iterator-helpers/issues">All Issues</a>,  <a href="https://github.com/tc39/proposal-iterator-helpers/issues/new">File a New Issue</a></li>
+    <li>Pull Requests:  <a href="https://github.com/tc39/proposal-iterator-helpers/pulls">All Pull Requests</a>,  <a href="https://github.com/tc39/proposal-iterator-helpers/pulls/new">Create a New Pull Request</a></li>
+    <!-- <li>Test Suite: <a href="https://github.com/tc39/test262">Test262</a></li> -->
+    <li>
+      <p>Community:</p>
+      <ul>
+        <li>IRC:  <a href="ircs://irc.freenode.net:6667">#tc39</a> on  <a href="https://freenode.net/kb/answer/chat">freenode</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<emu-clause id="sec-abstract-operations">
+  <h1><span class="secnum">1</span>Abstract Operations</h1>
+
+  <emu-clause id="sec-operations-on-iterator-objects">
+    <h1><span class="secnum">1.1</span>Operations on Iterator Objects</h1>
+
+    <emu-clause id="sec-getiteratordirect" aoid="GetIteratorDirect">
+      <h1><span class="secnum">1.1.1</span>GetIteratorDirect ( <var>obj</var> )</h1>
+      <emu-alg><ol><li>If <emu-xref aoid="Type" id="_ref_0"><a href="https://tc39.github.io/ecma262/#sec-ecmascript-data-types-and-values">Type</a></emu-xref>(<var>obj</var>) is not Object, throw a <emu-val>TypeError</emu-val> exception.</li><li>Let <var>nextMethod</var> be ?&nbsp;<emu-xref aoid="GetV" id="_ref_1"><a href="https://tc39.github.io/ecma262/#sec-getv">GetV</a></emu-xref>(<var>obj</var>, <code>"next"</code>).</li><li>Let <var>iteratorRecord</var> be <emu-xref href="#sec-list-and-record-specification-type"><a href="https://tc39.github.io/ecma262/#sec-list-and-record-specification-type">Record</a></emu-xref> { [[Iterator]]: <var>obj</var>, [[NextMethod]]: <var>nextMethod</var>, [[Done]]: <emu-val>false</emu-val> }.</li><li>Return <var>iteratorRecord</var>.
+      </li></ol></emu-alg>
+    </emu-clause>
+  </emu-clause>
+</emu-clause>
+
+<emu-clause id="sec-control-abstraction-objects">
+  <h1><span class="secnum">2</span>Control Abstraction Objects</h1>
+
+  <emu-clause id="sec-iteration">
+    <h1><span class="secnum">2.1</span>Iteration</h1>
+
+    <emu-clause id="sec-%iteratorprototype%-object">
+      <h1><span class="secnum">2.1.1</span>The %IteratorPrototype% Object</h1>
+
+      <emu-clause id="sec-iteratorprototype-map">
+        <h1><span class="secnum">2.1.1.1</span>%IteratorPrototype%.map ( <var>mapper</var> )</h1>
+        <emu-alg><ol><li>Let <var>iterated</var> be ?&nbsp;<emu-xref aoid="GetIteratorDirect" id="_ref_2"><a href="#sec-getiteratordirect">GetIteratorDirect</a></emu-xref>(<emu-val>this</emu-val> value).</li><li>If <emu-xref aoid="IsCallable" id="_ref_3"><a href="https://tc39.github.io/ecma262/#sec-iscallable">IsCallable</a></emu-xref>(<var>mapper</var>) is <emu-val>false</emu-val>, throw a <emu-val>TypeError</emu-val> exception.</li><li>Let <var>iterator</var> be <emu-xref aoid="ObjectCreate" id="_ref_4"><a href="https://tc39.github.io/ecma262/#sec-objectcreate">ObjectCreate</a></emu-xref>(<emu-xref href="#sec-iteratorprototypemapiteratorprototype" id="_ref_5"><a href="#sec-iteratorprototypemapiteratorprototype">%IteratorPrototypeMapIteratorPrototype%</a></emu-xref>, « [[Mapper]], [[Iterated]] »).</li><li>Set iterator.[[Mapper]] to <var>mapper</var>.</li><li>Set iterator.[[Iterated]] to <var>iterated</var>.</li><li>Return <var>iterator</var>.
+        </li></ol></emu-alg>
+
+        <emu-clause id="sec-iteratorprototypemapiteratorprototype">
+          <h1><span class="secnum">2.1.1.1.1</span>%IteratorPrototypeMapIteratorPrototype%</h1>
+          <p>The  <dfn>%IteratorPrototypeMapIteratorPrototype%</dfn> object:</p>
+          <ul>
+            <li>has a [[Prototype]] internal slot whose intrinsic value is <emu-xref href="#sec-%iteratorprototype%-object" id="_ref_6"><a href="#sec-%iteratorprototype%-object">%IteratorPrototype%</a></emu-xref>.</li>
+            <li>is an ordinary object.</li>
+          </ul>
+
+          <emu-clause id="sec-iteratorprototypemapiteratorprototype-next">
+            <h1><span class="secnum">2.1.1.1.1.1</span>%IteratorPrototypeMapIteratorPrototype%.next( <var>v</var> )</h1>
+            <emu-alg><ol><li>Let <var>O</var> be <emu-val>this</emu-val> value.</li><li>If <emu-xref aoid="Type" id="_ref_7"><a href="https://tc39.github.io/ecma262/#sec-ecmascript-data-types-and-values">Type</a></emu-xref>(<var>O</var>) is not Object, throw a <emu-val>TypeError</emu-val> exception.</li><li>If <var>O</var> does not have all the internal slots of a <emu-xref href="#sec-iteratorprototypemapiteratorprototype" id="_ref_8"><a href="#sec-iteratorprototypemapiteratorprototype">%IteratorPrototypeMapIteratorPrototype%</a></emu-xref> Instance, throw a <emu-val>TypeError</emu-val> exception.</li><li>Let <var>mapper</var> be <var>O</var>.[[Mapper]].</li><li>Let <var>iterated</var> be <var>O</var>.[[Iterated]].</li><li>Let <var>next</var> be ?&nbsp;<emu-xref aoid="IteratorStep" id="_ref_9"><a href="https://tc39.github.io/ecma262/#sec-iteratorstep">IteratorStep</a></emu-xref>(<var>iterated</var>, <var>v</var>).</li><li>If <var>next</var> is <emu-val>false</emu-val>, then<ol><li>Return <emu-xref aoid="CreateIterResultObject" id="_ref_10"><a href="https://tc39.github.io/ecma262/#sec-createiterresultobject">CreateIterResultObject</a></emu-xref>(<emu-val>undefined</emu-val>, <emu-val>true</emu-val>).</li></ol></li><li>Let <var>value</var> be ?&nbsp;<emu-xref aoid="IteratorValue" id="_ref_11"><a href="https://tc39.github.io/ecma262/#sec-iteratorvalue">IteratorValue</a></emu-xref>(<var>next</var>).</li><li>Let <var>mapped</var> be <emu-xref aoid="Call" id="_ref_12"><a href="https://tc39.github.io/ecma262/#sec-call">Call</a></emu-xref>(<var>mapper</var>, <emu-val>undefined</emu-val>, » value «).</li><li>If <var>mapped</var> is an <emu-xref href="#sec-completion-record-specification-type"><a href="https://tc39.github.io/ecma262/#sec-completion-record-specification-type">abrupt completion</a></emu-xref>, return ?&nbsp;<emu-xref aoid="IteratorClose" id="_ref_13"><a href="https://tc39.github.io/ecma262/#sec-iteratorclose">IteratorClose</a></emu-xref>(<var>iterated</var>, <var>mapped</var>).</li><li>Return <emu-xref aoid="CreateIterResultObject" id="_ref_14"><a href="https://tc39.github.io/ecma262/#sec-createiterresultobject">CreateIterResultObject</a></emu-xref>(<var>mapped</var>.[[Value]], <emu-val>false</emu-val>).
+            </li></ol></emu-alg>
+          </emu-clause>
+
+          <emu-clause id="sec-iteratorprototypemapiteratorprototype-return">
+            <h1><span class="secnum">2.1.1.1.1.2</span>%IteratorPrototypeMapIteratorPrototype%.return</h1>
+            <p>The initial value of <emu-xref href="#sec-iteratorprototypemapiteratorprototype" id="_ref_15"><a href="#sec-iteratorprototypemapiteratorprototype">%IteratorPrototypeMapIteratorPrototype%</a></emu-xref>.throw is <emu-xref href="#sec-iteratorprototypereturnpass" id="_ref_16"><a href="#sec-iteratorprototypereturnpass">%IteratorPrototypeReturnPass%</a></emu-xref>.</p>
+            <p>This property has the attributes { [[Writable]]: <emu-val>true</emu-val>, [[Enumerable]]: <emu-val>false</emu-val>, [[Configurable]]: <emu-val>true</emu-val> }.</p>
+          </emu-clause>
+
+          <emu-clause id="sec-iteratorprototypemapiteratorprototype-throw">
+            <h1><span class="secnum">2.1.1.1.1.3</span>%IteratorPrototypeMapIteratorPrototype%.throw</h1>
+            <p>The initial value of <emu-xref href="#sec-iteratorprototypemapiteratorprototype" id="_ref_17"><a href="#sec-iteratorprototypemapiteratorprototype">%IteratorPrototypeMapIteratorPrototype%</a></emu-xref>.throw is <emu-xref href="#sec-iteratorprototypethrowpass" id="_ref_18"><a href="#sec-iteratorprototypethrowpass">%IteratorPrototypeThrowPass%</a></emu-xref>.</p>
+            <p>This property has the attributes { [[Writable]]: <emu-val>true</emu-val>, [[Enumerable]]: <emu-val>false</emu-val>, [[Configurable]]: <emu-val>true</emu-val> }.</p>
+          </emu-clause>
+
+          <emu-clause id="sec-properties-of-iteratorprototypemapiteratorprototype-instances">
+            <h1><span class="secnum">2.1.1.1.1.4</span>Properties of %IteratorPrototypeMapIteratorPrototype% Instances</h1>
+            <emu-table id="table-1" caption="Internal Slots of %IteratorPrototypeMapIteratorPrototype Instances"><figure><figcaption>Table 1: Internal Slots of %IteratorPrototypeMapIteratorPrototype Instances</figcaption>
+              <table>
+                <tbody>
+                <tr>
+                  <th>
+                    Internal Slot
+                  
+                  </th>
+                  <th>
+                    Description
+                  
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    [[Iterated]]
+                  
+                  </td>
+                  <td>
+                    The iterator which is being iterated.
+                  
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    [[Mapper]]
+                  
+                  </td>
+                  <td>
+                    The function which is used to map each value of [[Iterated]].
+                  
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </figure></emu-table>
+          </emu-clause>
+        </emu-clause>
+      </emu-clause>
+
+      <emu-clause id="sec-iteratorprototype-filter">
+        <h1><span class="secnum">2.1.1.2</span>%IteratorPrototype%.filter ( <var>filterer</var> )</h1>
+        <emu-alg><ol><li>Let <var>iterated</var> be ?&nbsp;<emu-xref aoid="GetIteratorDirect" id="_ref_19"><a href="#sec-getiteratordirect">GetIteratorDirect</a></emu-xref>(<emu-val>this</emu-val> value).</li><li>If <emu-xref aoid="IsCallable" id="_ref_20"><a href="https://tc39.github.io/ecma262/#sec-iscallable">IsCallable</a></emu-xref>(<var>filterer</var>) is <emu-val>false</emu-val>, throw a <emu-val>TypeError</emu-val> exception.</li><li>Let <var>iterator</var> be <emu-xref aoid="ObjectCreate" id="_ref_21"><a href="https://tc39.github.io/ecma262/#sec-objectcreate">ObjectCreate</a></emu-xref>(<emu-xref href="#sec-iteratorprototypefilteriteratorprototype" id="_ref_22"><a href="#sec-iteratorprototypefilteriteratorprototype">%IteratorPrototypeFilterIteratorPrototype%</a></emu-xref>, « [[Filterer]], [[Iterated]] »).</li><li>Set iterator.[[Filterer]] to <var>filterer</var>.</li><li>Set iterator.[[Iterated]] to <var>iterated</var>.</li><li>Return <var>iterator</var>.
+        </li></ol></emu-alg>
+
+        <emu-clause id="sec-iteratorprototypefilteriteratorprototype">
+          <h1><span class="secnum">2.1.1.2.1</span>%IteratorPrototypeFilterIteratorPrototype%</h1>
+          <p>The  <dfn>%IteratorPrototypeFilterIteratorPrototype%</dfn> object:</p>
+          <ul>
+            <li>has a [[Prototype]] internal slot whose intrinsic value is <emu-xref href="#sec-%iteratorprototype%-object" id="_ref_23"><a href="#sec-%iteratorprototype%-object">%IteratorPrototype%</a></emu-xref>.</li>
+            <li>is an ordinary object.</li>
+          </ul>
+
+          <emu-clause id="sec-iteratorprototypefilteriteratorprototype-next">
+            <h1><span class="secnum">2.1.1.2.1.1</span>%IteratorPrototypeFilterIteratorPrototype%.next( <var>v</var> )</h1>
+            <emu-alg><ol><li>Let <var>O</var> be <emu-val>this</emu-val> value.</li><li>If <emu-xref aoid="Type" id="_ref_24"><a href="https://tc39.github.io/ecma262/#sec-ecmascript-data-types-and-values">Type</a></emu-xref>(<var>O</var>) is not Object, throw a <emu-val>TypeError</emu-val> exception.</li><li>If <var>O</var> does not have all the internal slots of a <emu-xref href="#sec-iteratorprototypefilteriteratorprototype" id="_ref_25"><a href="#sec-iteratorprototypefilteriteratorprototype">%IteratorPrototypeFilterIteratorPrototype%</a></emu-xref> Instance, throw a <emu-val>TypeError</emu-val> exception.</li><li>Let <var>filterer</var> be <var>O</var>.[[Filterer]].</li><li>Let <var>iterated</var> be <var>O</var>.[[Iterated]].</li><li>Repeat,<ol><li>Let <var>next</var> be ?&nbsp;<emu-xref aoid="IteratorStep" id="_ref_26"><a href="https://tc39.github.io/ecma262/#sec-iteratorstep">IteratorStep</a></emu-xref>(<var>iterated</var>, <var>v</var>).</li><li>If <var>next</var> is <emu-val>false</emu-val>, return <emu-xref aoid="CreateIterResultObject" id="_ref_27"><a href="https://tc39.github.io/ecma262/#sec-createiterresultobject">CreateIterResultObject</a></emu-xref>(<emu-val>undefined</emu-val>, <emu-val>true</emu-val>);</li><li>Let <var>value</var> be ?&nbsp;<emu-xref aoid="IteratorValue" id="_ref_28"><a href="https://tc39.github.io/ecma262/#sec-iteratorvalue">IteratorValue</a></emu-xref>(<var>next</var>).</li><li>Let <var>selected</var> be <emu-xref aoid="Call" id="_ref_29"><a href="https://tc39.github.io/ecma262/#sec-call">Call</a></emu-xref>(<var>filterer</var>, <emu-val>undefined</emu-val>, « <var>value</var> »).</li><li>If <var>selected</var> is an <emu-xref href="#sec-completion-record-specification-type"><a href="https://tc39.github.io/ecma262/#sec-completion-record-specification-type">abrupt completion</a></emu-xref>, return ?&nbsp;<emu-xref aoid="IteratorClose" id="_ref_30"><a href="https://tc39.github.io/ecma262/#sec-iteratorclose">IteratorClose</a></emu-xref>(<var>iterated</var>, <var>selected</var>).</li><li>If <emu-xref aoid="ToBoolean" id="_ref_31"><a href="https://tc39.github.io/ecma262/#sec-toboolean">ToBoolean</a></emu-xref>(<var>selected</var>.[[Value]]) is <emu-val>true</emu-val>, return <emu-xref aoid="CreateIterResultObject" id="_ref_32"><a href="https://tc39.github.io/ecma262/#sec-createiterresultobject">CreateIterResultObject</a></emu-xref>(<var>value</var>, <emu-val>false</emu-val>).
+            </li></ol></li></ol></emu-alg>
+          </emu-clause>
+
+          <emu-clause id="sec-iteratorprototypefilteriteratorprototype-return">
+            <h1><span class="secnum">2.1.1.2.1.2</span>%IteratorPrototypeFilterIteratorPrototype%.return</h1>
+            <p>The initial value of <emu-xref href="#sec-iteratorprototypefilteriteratorprototype" id="_ref_33"><a href="#sec-iteratorprototypefilteriteratorprototype">%IteratorPrototypeFilterIteratorPrototype%</a></emu-xref>.throw is <emu-xref href="#sec-iteratorprototypereturnpass" id="_ref_34"><a href="#sec-iteratorprototypereturnpass">%IteratorPrototypeReturnPass%</a></emu-xref>.</p>
+            <p>This property has the attributes { [[Writable]]: <emu-val>true</emu-val>, [[Enumerable]]: <emu-val>false</emu-val>, [[Configurable]]: <emu-val>true</emu-val> }.</p>
+          </emu-clause>
+
+          <emu-clause id="sec-iteratorprototypefilteriteratorprototype-throw">
+            <h1><span class="secnum">2.1.1.2.1.3</span>%IteratorPrototypeFilterIteratorPrototype%.throw</h1>
+            <p>The initial value of <emu-xref href="#sec-iteratorprototypefilteriteratorprototype" id="_ref_35"><a href="#sec-iteratorprototypefilteriteratorprototype">%IteratorPrototypeFilterIteratorPrototype%</a></emu-xref>.throw is <emu-xref href="#sec-iteratorprototypethrowpass" id="_ref_36"><a href="#sec-iteratorprototypethrowpass">%IteratorPrototypeThrowPass%</a></emu-xref>.</p>
+            <p>This property has the attributes { [[Writable]]: <emu-val>true</emu-val>, [[Enumerable]]: <emu-val>false</emu-val>, [[Configurable]]: <emu-val>true</emu-val> }.</p>
+          </emu-clause>
+
+          <emu-clause id="sec-properties-of-iteratorprototypefilteriteratorprototype-instances">
+            <h1><span class="secnum">2.1.1.2.1.4</span>Properties of %IteratorPrototypeFilterIteratorPrototype% Instances</h1>
+            <emu-table id="table-2" caption="Internal Slots of %IteratorPrototypeFilterIteratorPrototype Instances"><figure><figcaption>Table 2: Internal Slots of %IteratorPrototypeFilterIteratorPrototype Instances</figcaption>
+              <table>
+                <tbody>
+                <tr>
+                  <th>
+                    Internal Slot
+                  
+                  </th>
+                  <th>
+                    Description
+                  
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    [[Iterated]]
+                  
+                  </td>
+                  <td>
+                    The iterator which is being iterated.
+                  
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    [[Filterer]]
+                  
+                  </td>
+                  <td>
+                    The function which is used to filter values of [[Iterated]].
+                  
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </figure></emu-table>
+          </emu-clause>
+        </emu-clause>
+      </emu-clause>
+
+      <emu-clause id="sec-iteratorprototype-take">
+        <h1><span class="secnum">2.1.1.3</span>%IteratorPrototype%.take ( <var>limit</var> )</h1>
+        <emu-alg><ol><li>Let <var>iterated</var> be ?&nbsp;<emu-xref aoid="GetIteratorDirect" id="_ref_37"><a href="#sec-getiteratordirect">GetIteratorDirect</a></emu-xref>(<emu-val>this</emu-val> value).</li><li>Let <var>remaining</var> be ?&nbsp;<emu-xref aoid="ToNumber" id="_ref_38"><a href="https://tc39.github.io/ecma262/#sec-tonumber">ToNumber</a></emu-xref>(<var>limit</var>).</li><li>Let <var>iterator</var> be <emu-xref aoid="ObjectCreate" id="_ref_39"><a href="https://tc39.github.io/ecma262/#sec-objectcreate">ObjectCreate</a></emu-xref>(<emu-xref href="#sec-iteratorprototypetakeiteratorprototype" id="_ref_40"><a href="#sec-iteratorprototypetakeiteratorprototype">%IteratorPrototypeTakeIteratorPrototype%</a></emu-xref>, « [[Remaining]], [[Iterated]] »).</li><li>Set iterator.[[Remaining]] to <var>remaining</var>.</li><li>Set iterator.[[Iterated]] to <var>iterated</var>.</li><li>Return <var>iterator</var>.
+        </li></ol></emu-alg>
+
+        <emu-clause id="sec-iteratorprototypetakeiteratorprototype">
+          <h1><span class="secnum">2.1.1.3.1</span>%IteratorPrototypeTakeIteratorPrototype%</h1>
+          <p>The  <dfn>%IteratorPrototypeTakeIteratorPrototype%</dfn> object:</p>
+          <ul>
+            <li>has a [[Prototype]] internal slot whose intrinsic value is <emu-xref href="#sec-%iteratorprototype%-object" id="_ref_41"><a href="#sec-%iteratorprototype%-object">%IteratorPrototype%</a></emu-xref>.</li>
+            <li>is an ordinary object.</li>
+          </ul>
+
+          <emu-clause id="sec-iteratorprototypetakeiteratorprototype-next">
+            <h1><span class="secnum">2.1.1.3.1.1</span>%IteratorPrototypeTakeIteratorPrototype%.next( <var>v</var> )</h1>
+            <emu-alg><ol><li>Let <var>O</var> be <emu-val>this</emu-val> value.</li><li>If <emu-xref aoid="Type" id="_ref_42"><a href="https://tc39.github.io/ecma262/#sec-ecmascript-data-types-and-values">Type</a></emu-xref>(<var>O</var>) is not Object, throw a <emu-val>TypeError</emu-val> exception.</li><li>If <var>O</var> does not have all the internal slots of a <emu-xref href="#sec-iteratorprototypetakeiteratorprototype" id="_ref_43"><a href="#sec-iteratorprototypetakeiteratorprototype">%IteratorPrototypeTakeIteratorPrototype%</a></emu-xref> Instance, throw a <emu-val>TypeError</emu-val> exception.</li><li>Let <var>remaining</var> be <var>O</var>.[[Remaining]].</li><li>If <var>remaining</var> is 0, return <emu-xref aoid="CreateIterResultObject" id="_ref_44"><a href="https://tc39.github.io/ecma262/#sec-createiterresultobject">CreateIterResultObject</a></emu-xref>(<emu-val>undefined</emu-val>, <emu-val>true</emu-val>).</li><li>Set <var>O</var>.[[Remaining]] to <var>remaining</var> - 1.</li><li>Let <var>iterated</var> be <var>O</var>.[[Iterated]].</li><li>Return ?&nbsp;<emu-xref aoid="IteratorNext" id="_ref_45"><a href="https://tc39.github.io/ecma262/#sec-iteratornext">IteratorNext</a></emu-xref>(<var>iterated</var>, <var>v</var>).
+            </li></ol></emu-alg>
+          </emu-clause>
+
+          <emu-clause id="sec-iteratorprototypetakeiteratorprototype-return">
+            <h1><span class="secnum">2.1.1.3.1.2</span>%IteratorPrototypeTakeIteratorPrototype%.return</h1>
+            <p>The initial value of <emu-xref href="#sec-iteratorprototypetakeiteratorprototype" id="_ref_46"><a href="#sec-iteratorprototypetakeiteratorprototype">%IteratorPrototypeTakeIteratorPrototype%</a></emu-xref>.throw is <emu-xref href="#sec-iteratorprototypereturnpass" id="_ref_47"><a href="#sec-iteratorprototypereturnpass">%IteratorPrototypeReturnPass%</a></emu-xref>.</p>
+            <p>This property has the attributes { [[Writable]]: <emu-val>true</emu-val>, [[Enumerable]]: <emu-val>false</emu-val>, [[Configurable]]: <emu-val>true</emu-val> }.</p>
+          </emu-clause>
+
+          <emu-clause id="sec-iteratorprototypetakeiteratorprototype-throw">
+            <h1><span class="secnum">2.1.1.3.1.3</span>%IteratorPrototypeTakeIteratorPrototype%.throw</h1>
+            <p>The initial value of <emu-xref href="#sec-iteratorprototypetakeiteratorprototype" id="_ref_48"><a href="#sec-iteratorprototypetakeiteratorprototype">%IteratorPrototypeTakeIteratorPrototype%</a></emu-xref>.throw is <emu-xref href="#sec-iteratorprototypethrowpass" id="_ref_49"><a href="#sec-iteratorprototypethrowpass">%IteratorPrototypeThrowPass%</a></emu-xref>.</p>
+            <p>This property has the attributes { [[Writable]]: <emu-val>true</emu-val>, [[Enumerable]]: <emu-val>false</emu-val>, [[Configurable]]: <emu-val>true</emu-val> }.</p>
+          </emu-clause>
+
+          <emu-clause id="sec-properties-of-iteratorprototypetakeiteratorprototype-instances">
+            <h1><span class="secnum">2.1.1.3.1.4</span>Properties of %IteratorPrototypeTakeIteratorPrototype% Instances</h1>
+            <emu-table id="table-3" caption="Internal Slots of %IteratorPrototypeTakeIteratorPrototype Instances"><figure><figcaption>Table 3: Internal Slots of %IteratorPrototypeTakeIteratorPrototype Instances</figcaption>
+              <table>
+                <tbody>
+                <tr>
+                  <th>
+                    Internal Slot
+                  
+                  </th>
+                  <th>
+                    Description
+                  
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    [[Iterated]]
+                  
+                  </td>
+                  <td>
+                    The iterator which is being iterated.
+                  
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    [[Remaining]]
+                  
+                  </td>
+                  <td>
+                    The remaining number of items to take from [[Iterated]].
+                  
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </figure></emu-table>
+          </emu-clause>
+        </emu-clause>
+      </emu-clause>
+
+      <emu-clause id="sec-iteratorprototype-reduce">
+        <h1><span class="secnum">2.1.1.4</span>%IteratorPrototype%.reduce ( <var>reducer</var>, <var>initialValue</var> )</h1>
+        <emu-alg><ol><li>Let <var>iterated</var> be ?&nbsp;<emu-xref aoid="GetIteratorDirect" id="_ref_50"><a href="#sec-getiteratordirect">GetIteratorDirect</a></emu-xref>(<emu-val>this</emu-val> value).</li><li>If <emu-xref aoid="IsCallable" id="_ref_51"><a href="https://tc39.github.io/ecma262/#sec-iscallable">IsCallable</a></emu-xref>(<var>reducer</var>) is <emu-val>false</emu-val>, throw a <emu-val>TypeError</emu-val> exception.</li><li>Let <var>accumulator</var> be <var>initialValue</var>.</li><li>Repeat,<ol><li>Let <var>next</var> be ?&nbsp;<emu-xref aoid="IteratorStep" id="_ref_52"><a href="https://tc39.github.io/ecma262/#sec-iteratorstep">IteratorStep</a></emu-xref>(<var>iterated</var>).</li><li>If <var>next</var> is <emu-val>false</emu-val>, return <var>accumulator</var>.</li><li>Let <var>value</var> be ?&nbsp;<emu-xref aoid="IteratorValue" id="_ref_53"><a href="https://tc39.github.io/ecma262/#sec-iteratorvalue">IteratorValue</a></emu-xref>(<var>next</var>).</li><li>Let <var>result</var> be <emu-xref aoid="Call" id="_ref_54"><a href="https://tc39.github.io/ecma262/#sec-call">Call</a></emu-xref>(<var>reducer</var>, <emu-val>undefined</emu-val>, « <var>accumulator</var>, <var>value</var> »).</li><li>If <var>result</var> is an <emu-xref href="#sec-completion-record-specification-type"><a href="https://tc39.github.io/ecma262/#sec-completion-record-specification-type">abrupt completion</a></emu-xref>, return ?&nbsp;<emu-xref aoid="IteratorClose" id="_ref_55"><a href="https://tc39.github.io/ecma262/#sec-iteratorclose">IteratorClose</a></emu-xref>(<var>iterated</var>, <var>result</var>).</li><li>Set <var>accumulator</var> to <var>result</var>.[[Value]].
+        </li></ol></li></ol></emu-alg>
+      </emu-clause>
+
+      <emu-clause id="sec-iteratorprototype-collect">
+        <h1><span class="secnum">2.1.1.5</span>%IteratorPrototype%.collect ( )</h1>
+        <emu-alg><ol><li>Let <var>iterated</var> be ?&nbsp;<emu-xref aoid="GetIteratorDirect" id="_ref_56"><a href="#sec-getiteratordirect">GetIteratorDirect</a></emu-xref>(<emu-val>this</emu-val> value).</li><li>Let <var>items</var> be a new empty <emu-xref href="#sec-list-and-record-specification-type"><a href="https://tc39.github.io/ecma262/#sec-list-and-record-specification-type">List</a></emu-xref>.</li><li>Repeat,<ol><li>Let <var>next</var> be ?&nbsp;<emu-xref aoid="IteratorStep" id="_ref_57"><a href="https://tc39.github.io/ecma262/#sec-iteratorstep">IteratorStep</a></emu-xref>(<var>iterated</var>).</li><li>If <var>next</var> is <emu-val>false</emu-val>, return ?&nbsp;<emu-xref aoid="CreateArrayFromList" id="_ref_58"><a href="https://tc39.github.io/ecma262/#sec-createarrayfromlist">CreateArrayFromList</a></emu-xref>(<var>items</var>).</li><li>Let <var>value</var> be ?&nbsp;<emu-xref aoid="IteratorValue" id="_ref_59"><a href="https://tc39.github.io/ecma262/#sec-iteratorvalue">IteratorValue</a></emu-xref>(<var>next</var>).</li><li>Append <var>value</var> to <var>items</var>.
+        </li></ol></li></ol></emu-alg>
+      </emu-clause>
+    </emu-clause>
+
+    <emu-clause id="sec-asynciteratorprototype">
+      <h1><span class="secnum">2.1.2</span>The %AsyncIteratorPrototype% Object</h1>
+    </emu-clause>
+
+    <emu-clause id="sec-iteratorprototypereturnpass">
+      <h1><span class="secnum">2.1.3</span>%IteratorPrototypeReturnPass% ( <var>value</var> )</h1>
+      <p>The  <dfn>%IteratorPrototypeReturnPass%</dfn> intrinsic is a built-in function object that is defined once for each <emu-xref href="#realm"><a href="https://tc39.github.io/ecma262/#realm">realm</a></emu-xref>.</p>
+      <emu-alg><ol><li>Let <var>O</var> be <emu-val>this</emu-val> value.</li><li>If <emu-xref aoid="Type" id="_ref_60"><a href="https://tc39.github.io/ecma262/#sec-ecmascript-data-types-and-values">Type</a></emu-xref>(<var>O</var>) is not Object, throw a <emu-val>TypeError</emu-val> exception.</li><li>If <var>O</var> does not have a [[Iterated]] internal slot, throw a <emu-val>TypeError</emu-val> exception.</li><li>Let <var>iterated</var> be <var>O</var>.[[Iterated]].</li><li>Let <var>return</var> be ?&nbsp;<emu-xref aoid="GetMethod" id="_ref_61"><a href="https://tc39.github.io/ecma262/#sec-getmethod">GetMethod</a></emu-xref>(<var>iterated</var>, <code>"return"</code>).</li><li>If <var>return</var> is <emu-val>undefined</emu-val>, return <emu-xref aoid="CreateIterResultObject" id="_ref_62"><a href="https://tc39.github.io/ecma262/#sec-createiterresultobject">CreateIterResultObject</a></emu-xref>(<var>value</var>, <emu-val>true</emu-val>).</li><li>Return ?&nbsp;<emu-xref aoid="Call" id="_ref_63"><a href="https://tc39.github.io/ecma262/#sec-call">Call</a></emu-xref>(<var>return</var>, <var>iterated</var>.[[Iterator]], « value »).
+      </li></ol></emu-alg>
+    </emu-clause>
+
+    <emu-clause id="sec-iteratorprototypethrowpass">
+      <h1><span class="secnum">2.1.4</span>%IteratorPrototypeThrowPass% ( <var>value</var> )</h1>
+      <p>The  <dfn>%IteratorPrototypeThrowPass%</dfn> intrinsic is a built-in function object that is defined once for each <emu-xref href="#realm"><a href="https://tc39.github.io/ecma262/#realm">realm</a></emu-xref>.</p>
+      <emu-alg><ol><li>Let <var>O</var> be <emu-val>this</emu-val> value.</li><li>If <emu-xref aoid="Type" id="_ref_64"><a href="https://tc39.github.io/ecma262/#sec-ecmascript-data-types-and-values">Type</a></emu-xref>(<var>O</var>) is not Object, throw a <emu-val>TypeError</emu-val> exception.</li><li>If <var>O</var> does not have a [[Iterated]] internal slot, throw a <emu-val>TypeError</emu-val> exception.</li><li>Let <var>iterated</var> be <var>O</var>.[[Iterated]].</li><li>Let <var>throw</var> be ?&nbsp;<emu-xref aoid="GetMethod" id="_ref_65"><a href="https://tc39.github.io/ecma262/#sec-getmethod">GetMethod</a></emu-xref>(<var>iterated</var>, <code>"throw"</code>).</li><li>If <var>throw</var> is <emu-val>undefined</emu-val>, return ThrowCompletion(<var>value</var>).</li><li>Return ?&nbsp;<emu-xref aoid="Call" id="_ref_66"><a href="https://tc39.github.io/ecma262/#sec-call">Call</a></emu-xref>(<var>throw</var>, <var>iterated</var>.[[Iterator]], « value »).
+      </li></ol></emu-alg>
+    </emu-clause>
+  </emu-clause>
+</emu-clause>
+</div></body>
